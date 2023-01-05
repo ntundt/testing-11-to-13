@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="by.ntundt.lab12.test.ProductsPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="sortingTest"/>
+          <include name="stopBrowser"/>
+          <include name="reverseSortingTest"/>
+        </methods>
+      </class> <!-- by.ntundt.lab12.test.ProductsPageTests -->
+      <class name="by.ntundt.lab12.lab12.MainPageTest">
+        <methods>
+          <include name="navigationToAllTools"/>
+          <include name="toolsMenu"/>
+          <include name="setUp"/>
+          <include name="search"/>
+          <include name="setUpAll"/>
+        </methods>
+      </class> <!-- by.ntundt.lab12.lab12.MainPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

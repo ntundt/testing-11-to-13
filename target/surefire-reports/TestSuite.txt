@@ -1,0 +1,89 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 319.826 s <<< FAILURE! - in TestSuite
+navigationToAllTools(by.ntundt.lab12.lab12.MainPageTest)  Time elapsed: 21.129 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {a.wt-button_mode_primary}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/E:/Files/Labs/Testing/lab12/build/reports/tests/1672351363390.0.png
+Page source: file:/E:/Files/Labs/Testing/lab12/build/reports/tests/1672351363390.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a.wt-button_mode_primary"}
+	at by.ntundt.lab12.lab12.MainPageTest.navigationToAllTools(MainPageTest.java:51)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"a.wt-button_mode_primary"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIKITA', ip: '10.17.0.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\nikit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25f00a1af04023e0c5d9bee6848fc31e
+*** Element info: {Using=css selector, value=a.wt-button_mode_primary}
+	at by.ntundt.lab12.lab12.MainPageTest.navigationToAllTools(MainPageTest.java:51)
+
+search(by.ntundt.lab12.lab12.MainPageTest)  Time elapsed: 3.403 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {[data-test='menu-main-icon-search']}
+Expected: visible or transparent: visible or have css value opacity=0
+Page source: file:/E:/Files/Labs/Testing/lab12/build/reports/tests/1672351383674.1.html
+Timeout: 4 s.
+Caused by: NoSuchWindowException: no such window: target window already closed
+	at by.ntundt.lab12.lab12.MainPageTest.search(MainPageTest.java:34)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIKITA', ip: '10.17.0.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\nikit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25f00a1af04023e0c5d9bee6848fc31e
+*** Element info: {Using=css selector, value=[data-test='menu-main-icon-search']}
+	at by.ntundt.lab12.lab12.MainPageTest.search(MainPageTest.java:34)
+
+toolsMenu(by.ntundt.lab12.lab12.MainPageTest)  Time elapsed: 4.282 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //div[contains(@class, 'menu-main__item') and text() = 'Developer Tools']}
+Expected: exist
+Page source: file:/E:/Files/Labs/Testing/lab12/build/reports/tests/1672351388016.2.html
+Timeout: 4 s.
+Caused by: NoSuchWindowException: no such window: target window already closed
+	at by.ntundt.lab12.lab12.MainPageTest.toolsMenu(MainPageTest.java:44)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIKITA', ip: '10.17.0.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\nikit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25f00a1af04023e0c5d9bee6848fc31e
+*** Element info: {Using=xpath, value=//div[contains(@class, 'menu-main__item') and text() = 'Developer Tools']}
+	at by.ntundt.lab12.lab12.MainPageTest.toolsMenu(MainPageTest.java:44)
+
+reverseSortingTest(by.ntundt.lab12.test.ProductsPageTests)  Time elapsed: 126.172 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //thead[1]/tr[1]/th[5] (tried for 120 second(s) with 500 milliseconds interval)
+	at by.ntundt.lab12.test.ProductsPageTests.reverseSortingTest(ProductsPageTests.java:31)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //thead[1]/tr[1]/th[5]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIKITA', ip: '10.17.0.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:geckodriverVersion: 0.32.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 7816, moz:profile: C:\Users\nikit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 32ac7378-56e8-4ecc-aa2e-8e87080f4440
+*** Element info: {Using=xpath, value=//thead[1]/tr[1]/th[5]}
+	at by.ntundt.lab12.test.ProductsPageTests.reverseSortingTest(ProductsPageTests.java:31)
+
+sortingTest(by.ntundt.lab12.test.ProductsPageTests)  Time elapsed: 16.866 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+Element <th class="  noSort "> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MIKITA', ip: '10.17.0.14', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:geckodriverVersion: 0.32.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 16576, moz:profile: C:\Users\nikit\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2828843e-4de3-4c5f-a7cd-4fe8fbeb3bc2
+	at by.ntundt.lab12.test.ProductsPageTests.sortingTest(ProductsPageTests.java:20)
+
